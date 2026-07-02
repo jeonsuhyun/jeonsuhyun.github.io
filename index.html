@@ -21,7 +21,7 @@
     }
   </style>
 
-  <!-- <link rel="icon" type="image/png" href="image/profile.jpg"> -->
+  <!-- <link rel="icon" type="image/png" href="images/profile.jpg"> -->
 </head>
 
 <body>
@@ -36,7 +36,7 @@
             <tbody>
               <tr style="padding:0px">
                 <td style="padding:5%;width:38%;max-width:38%">
-                  <img style="width:100%;max-width:100%" alt="profile photo" src="image/profile.jpg"
+                  <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.jpg"
                     class="hoverZoomLink">
                 </td>
 
@@ -49,9 +49,10 @@
                     I am an Integrated M.S./Ph.D. student at the
                     <a href="https://gsct.snu.ac.kr/">Graduate School of Convergence Science and Technology</a>,
                     Seoul National University, advised by Professor Jaeheung Park.
-                    My research lies at the intersection of robotic manipulation, motion planning, and
-                    machine learning, with a focus on learning representations and motion primitives for
-                    reliable robot-arm manipulation in constrained and uncertain environments.
+                    My research focuses on robotic manipulation, constrained motion planning, and
+                    machine learning for reliable robot-arm systems. I am particularly interested in
+                    learning representations and motion-generation methods that improve planning,
+                    adaptation, and execution in high-dimensional and constrained robotic tasks.
                   </p>
 
                   <p>
@@ -60,7 +61,6 @@
 
                   <p style="text-align:center">
                     <i class="fa fa-file-text"></i><a href="pdfs/CV_SuhyunJeon.pdf"> CV </a> &nbsp;&nbsp;/&nbsp;
-                    <!-- TODO: replace # with your Google Scholar URL when available. -->
                     <i class="fa fa-graduation-cap"></i><a href="https://scholar.google.com/citations?user=oPw5X7YAAAAJ&hl=ko&oi=ao"> Google Scholar</a> &nbsp;&nbsp;/&nbsp;
                     <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/jeonsuhyun"> Github</a> &nbsp;&nbsp;/&nbsp;
                     <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:suhyun0606@snu.ac.kr"> Email</a>
@@ -79,12 +79,11 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Research Interests</heading>
                   <p style="padding-top:5px">
-                    My research aims to develop robot systems that can plan, adapt, and recover robustly
-                    in complex manipulation tasks. I work on learning-based constrained motion planning,
-                    representation learning for robot configuration spaces, adaptive motion generation for
-                    non-rigid object and liquid manipulation, and bimanual manipulation with dual robot arms.
-                    I am also interested in integrating failure detection and recovery mechanisms into
-                    imitation-learning and motion-generation pipelines.
+                    My research interests lie at the intersection of robotic manipulation, motion planning,
+                    and machine learning. I work on learning-based constrained motion planning,
+                    connectivity-aware representations of robot configuration spaces, adaptive motion
+                    generation for non-rigid and liquid manipulation, learning-based sampling strategies,
+                    bimanual manipulation, and haptic telemanipulation systems.
                   </p>
                 </td>
               </tr>
@@ -98,7 +97,7 @@
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Research / Publications</heading>
+                  <heading>Publications</heading>
                   <a> <font color="#000000">( * denotes equal contribution.)</font></a>
                 </td>
               </tr>
@@ -112,50 +111,50 @@
               <tr>
                 <td style="padding:0px;padding-bottom:2px;width:25%;vertical-align:middle">
                   <center>
-                    <!-- TODO: add a representative figure. -->
-                    <img src="image/connectivity.png" alt="connectivity-aware planning" width="200"
+                    <img src="images/connectivity.png" alt="connectivity-aware representation" width="200"
                       style="margin-bottom: 8px">
                   </center>
                 </td>
                 <td style="padding-left:20px;padding-top:1px;padding-bottom:8px;width:75%;vertical-align:middle">
-                  <papertitle>Connectivity-Aware Representations for Constrained Motion Planning via Multi-Scale Contrastive Learning</papertitle>
+                  <papertitle>[P1] Connectivity-Aware Representations for Constrained Motion Planning via Multi-Scale Contrastive Learning</papertitle>
                   <br>
-                  <strong>Suhyun Jeon</strong>, Yumin Lim, Hyeonseo Kim, Woojeong Baek, Suhan Park and Jaeheung Park
+                  <strong>Suhyun Jeon</strong>, Yumin Lim, Woojeong Baek, Hyeonseo Kim, Suhan Park, Jaeheung Park
                   <br>
-                  <em>Manuscript / Research Project</em>
+                  <em>arXiv preprint arXiv:2603.25298, 2026</em>
                   <br>
-                  <a href="#">Project Page</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                  <a href="#">Paper</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                  <a href="#">Code</a>
+                  <a href="https://arxiv.org/abs/2603.25298">Paper</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="#">Code</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="#">Bibtex</a>
                   <p>
-                    Learning a representation that captures planner-level connectivity on constrained
-                    configuration manifolds, enabling better start-goal IK selection before motion planning.
+                    Learning a connectivity-aware representation for constrained motion planning using
+                    multi-scale contrastive learning over robot configuration spaces.
                   </p>
                 </td>
               </tr>
 
+
+
               <tr>
                 <td style="padding:0px;padding-bottom:2px;width:25%;vertical-align:middle">
                   <center>
-                    <!-- TODO: add a representative figure or GIF from pouring experiments. -->
-                    <img src="images/pouring.png" alt="viscosity-adaptive pouring" width="200"
+                    <img src="images/pouring.png" alt="viscosity-adaptive robotic pouring" width="200"
                       style="margin-bottom: 8px">
                   </center>
                 </td>
                 <td style="padding-left:20px;padding-top:1px;padding-bottom:8px;width:75%;vertical-align:middle">
-                  <papertitle>Adaptive Motion Manifold Primitives for Viscosity-Adaptive Robotic Pouring</papertitle>
+                  <papertitle>[P2] Adaptive Motion Manifold Primitives for Viscosity-Adaptive Robotic Pouring</papertitle>
                   <br>
-                  Hobeen Kim, <strong>Suhyun Jeon</strong>, Minsu Chang, Haeseong Lee and Jaeheung Park
+                  Hobeen Kim, <strong>Suhyun Jeon</strong>, Minsu Chang, Haeseong Lee, Jaeheung Park
                   <br>
-                  <em>Ongoing Research</em>
+                  <em>Preprint / Manuscript, 2026</em>
                   <br>
-                  <a href="#">Project Page</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
                   <a href="#">Paper</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                  <a href="#">Code</a>
+                  <a href="#">Code</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="#">Bibtex</a>
                   <p>
                     Developing adaptive motion generation methods for robotic pouring under varying liquid
-                    viscosity, container geometry, and target conditions using motion primitives and
-                    conditional generative models.
+                    viscosity, container geometry, and target conditions using task-grounded trajectory
+                    representations, motion manifold primitives, and conditional generative models.
                   </p>
                 </td>
               </tr>
@@ -163,23 +162,71 @@
               <tr>
                 <td style="padding:0px;padding-bottom:2px;width:25%;vertical-align:middle">
                   <center>
-                    <!-- TODO: add a representative figure from the latent constrained planning project. -->
+                    <img src="images/sampling_strategy.png" alt="learning-based sampling strategy" width="200"
+                      style="margin-bottom: 8px">
+                  </center>
+                </td>
+                <td style="padding-left:20px;padding-top:1px;padding-bottom:8px;width:75%;vertical-align:middle">
+                  <papertitle>[J2] Learning-Based Sampling Strategies Leveraging Bidirectional Motion Planning Characteristics</papertitle>
+                  <br>
+                  <strong>Suhyun Jeon</strong>, Minsu Kim, Jaehoon Jang, Minsu Chang, Jaeheung Park
+                  <br>
+                  <em>The Journal of Korea Robotics Society, 21(2):164-171, 2026</em>
+                  <br>
+                  <a href="#">Paper</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="#">Code</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="#">Bibtex</a>
+                  <p>
+                    Developing learning-based sampling strategies that exploit bidirectional motion planning
+                    characteristics to improve planning performance in robot motion planning problems.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:0px;padding-bottom:2px;width:25%;vertical-align:middle">
+                  <center>
+                    <img src="images/gdprox.png" alt="GD-Prox telemanipulation" width="200"
+                      style="margin-bottom: 8px">
+                  </center>
+                </td>
+                <td style="padding-left:20px;padding-top:1px;padding-bottom:8px;width:75%;vertical-align:middle">
+                  <papertitle>[C1] GD-Prox: A Haptic-Glove Dual-Proxy Framework for Remote Dexterous Robot Hand Telemanipulation</papertitle>
+                  <br>
+                  Donghyun Kim, Woong Chong, <strong>Suhyun Jeon</strong>, Seongjun Byun, Seunghwan Yu, Oussama Khatib, Jaeheung Park
+                  <br>
+                  <em>IEEE-RAS International Conference on Humanoid Robots (Humanoids), 2025</em>
+                  <br>
+                  <a href="#">Paper</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="#">Project Page</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="#">Bibtex</a>
+                  <p>
+                    A haptic-glove dual-proxy framework for remote dexterous robot hand telemanipulation.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:0px;padding-bottom:2px;width:25%;vertical-align:middle">
+                  <center>
                     <img src="images/latent_planning.png" alt="latent constrained motion planning" width="200"
                       style="margin-bottom: 8px">
                   </center>
                 </td>
                 <td style="padding-left:20px;padding-top:1px;padding-bottom:8px;width:75%;vertical-align:middle">
-                  <papertitle>A Constrained Motion Planning Method Exploiting Learned Latent Space for High-Dimensional State and Constraint Spaces</papertitle>
+                  <papertitle>[J1] A Constrained Motion Planning Method Exploiting Learned Latent Space for High-Dimensional State and Constraint Spaces</papertitle>
                   <br>
-                  Suhan Park, <strong>Suhyun Jeon</strong> and Jaeheung Park.
+                  Suhan Park, <strong>Suhyun Jeon</strong>, Jaeheung Park
                   <br>
-                  <em>Research Project</em>
+                  <em>IEEE/ASME Transactions on Mechatronics, 29(4):3001-3009, 2024</em>
                   <br>
                   <a href="https://sites.google.com/view/ljcmp">Project Page</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                  <a href="https://github.com/psh117/ljcmp">Code</a>
+                  <a href="#">Paper</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="https://github.com/psh117/ljcmp">Code</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="#">Bibtex</a>
                   <p>
                     Exploiting learned latent spaces to improve constrained motion planning in
-                    high-dimensional robot systems.
+                    high-dimensional robot state and constraint spaces.
                   </p>
                 </td>
               </tr>
@@ -205,76 +252,21 @@
             <tbody>
 
               <tr>
-                <td style="padding:0px;padding-bottom:2px;width:25%;vertical-align:middle">
-                  <center>
-                    <img src="images/ammp.png" alt="adaptive motion manifold primitives" width="200"
-                      style="margin-bottom: 8px">
-                  </center>
-                </td>
-                <td style="padding-left:20px;padding-top:8px;padding-bottom:8px;width:75%;vertical-align:middle">
-                  <papertitle>Adaptive Motion Manifold Primitives for Robotic Pouring</papertitle>
-                  <br>
-                  <em>Robotic manipulation, motion primitive learning, conditional generative models</em>
-                  <br>
-                  Designing a trajectory generation framework that adapts pouring motions to different
-                  liquid viscosities and container geometries, with real-robot execution on Franka Panda.
-                  <br>
-                  <p></p>
-                </td>
-              </tr>
-
-              <tr>
                 <td style="padding:0px;width:25%;vertical-align:middle">
                   <center>
-                    <img src="images/constrained_planning.png" alt="constrained motion planning" width="200"
+                    <img src="images/bimanual_project.png" alt="bimanual manipulation project" width="200"
                       style="margin-bottom: 8px">
                   </center>
                 </td>
                 <td style="padding-left:20px;padding-top:8px;padding-bottom:8px;width:75%;vertical-align:middle">
-                  <papertitle>Connectivity-Aware Start-Goal Selection for Constrained Motion Planning</papertitle>
+                  <papertitle>Bimanual Manipulation and Virtual Gripper Control</papertitle>
                   <br>
-                  <em>Motion planning, representation learning, contrastive learning</em>
+                  <em>Dual-arm manipulation, grasp synthesis, robot-arm coordination</em>
                   <br>
-                  Learning a configuration-space representation that reflects connectivity under constraints,
-                  and using it to select feasible IK pairs before running sampling-based planners.
-                  <br>
-                  <p></p>
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:0px;width:25%;vertical-align:middle">
-                  <center>
-                    <img src="images/bimanual.png" alt="bimanual virtual gripper" width="200"
-                      style="margin-bottom: 8px">
-                  </center>
-                </td>
-                <td style="padding-left:20px;padding-top:8px;padding-bottom:8px;width:75%;vertical-align:middle">
-                  <papertitle>Dual-Arm Virtual Gripper for Large-Object Manipulation</papertitle>
-                  <br>
-                  <em>Bimanual manipulation, grasp synthesis, dual-arm control</em>
-                  <br>
-                  Investigating how two robot arms can act as a virtual gripper to grasp and manipulate
-                  objects that exceed the size limits of a single parallel gripper.
-                  <br>
-                  <p></p>
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:0px;width:25%;vertical-align:middle">
-                  <center>
-                    <img src="images/failure_detection.png" alt="failure detection" width="200"
-                      style="margin-bottom: 8px">
-                  </center>
-                </td>
-                <td style="padding-left:20px;padding-top:8px;padding-bottom:8px;width:75%;vertical-align:middle">
-                  <papertitle>Failure Detection for Learning-Based Robot Policies</papertitle>
-                  <br>
-                  <em>Imitation learning, uncertainty estimation, robot safety</em>
-                  <br>
-                  Studying failure prediction and out-of-distribution detection for robot manipulation
-                  policies using multimodal observations and conformal thresholding.
+                  Investigating dual-arm manipulation methods where two robot arms can act as a virtual
+                  gripper for grasping and manipulating objects that exceed the size limits of a single
+                  robot gripper. The project explores Dex-Net-style grasp mapping, coordination constraints,
+                  sliding-chain constraints, and execution strategies for bimanual manipulation.
                   <br>
                   <p></p>
                 </td>
@@ -293,13 +285,13 @@
                   <heading>Education</heading>
                   <br>
                   <br>
-                  <li><b>2023.03.</b> Integrated M.S./Ph.D. student, Graduate School of Convergence Science and Technology, Seoul National University</li>
+                  <li><b>Mar. 2023 - Present.</b> Integrated M.S./Ph.D. student, Graduate School of Convergence Science and Technology, Seoul National University</li>
                     <ul>
                       <li>Advisor: Prof. Jaeheung Park</li>
                       <li>Research areas: robotic manipulation, motion planning, machine learning for robotics</li>
                     </ul>
-                  <li><b>2017.03.~2023.02.</b> B.S. degree in Department, Mechanical Engineering Seoul National University</li>
-                  <li><b>2014.03.~2017.02.</b> Seoul Science High School</li>
+                  <li><b>Mar. 2017 - Feb. 2023.</b> B.S. degree in Mechanical Engineering, Seoul National University</li>
+                  <li><b>Mar. 2014 - Feb. 2017.</b> Seoul Science High School</li>
                 </td>
               </tr>
             </tbody>
@@ -315,8 +307,8 @@
                   <heading>Teaching / Service</heading>
                   <br>
                   <br>
-                  <li>Teaching Assistant, <b>Dynamics</b>, Seoul National University, 2023</li>
-                  <li>Teaching Assistant, <b>Robotics</b>, Seoul National University, 2024</li>
+                  <li>Teaching Assistant, Seoul National University</li>
+                  <li>Research mentoring and project support in robotic manipulation and motion planning</li>
                 </td>
               </tr>
             </tbody>
